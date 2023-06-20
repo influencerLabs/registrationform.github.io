@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reg Form</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="script/main.js"></script> 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center><h1>INFLUENCER LABS</h1></center>
+    <hr>
+    <form method="" action="" name="reg_form" onsubmit="return validate()">
+        <h2>Registration Form</h2>
+        <table>
+            <tr>
+                <td><label>First Name: </label></td>
+                <td>
+                    <input type="text" name="fname" placeholder="First Name" required="true">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Last Name: </label></td>
+                <td>
+                    <input type="text" name="lname" placeholder="Last Name"  required="true">  
+                </td>
+            </tr>
+            <tr>
+                <td><label>Address: </label></td>
+                <td>
+                    <input type="textarea" size="50" name="address" placeholder="Address" required="true">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Gender: </label></td>
+                <td>
+                    <input type="radio" name="gender" value="male" required="true">Male
+                    <input type="radio" name="gender" value="femele"required="true">Female
+                </td>
+            </tr>
+            <tr>
+                <td><label>Age:</label></td>
+                <td>
+                    <input type="number" name="Age" placeholder="Your Age" required="true">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Email Id: </label></td>
+                <td>
+                    <input type="text" name="email" placeholder="example@gmail.com" required="true">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Mobile: </label></td>
+                <td>
+                    <input type="number" name="mobile" placeholder="mobile number" required="true">
+                </td>
+            </tr>
+            <tr>
+            <td><label>Course: </label></td>
+                <td>
+                    <select name="course">
+                        <option value="select course">select course</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JAVASCRIPT</option>
+                        <option value="Java">JAVA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit" value="Submit" required="true">
+                    <input type="reset" name="reset" value="Reset" required="true">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
